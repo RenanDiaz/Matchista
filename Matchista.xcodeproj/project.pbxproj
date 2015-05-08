@@ -11,9 +11,9 @@
 		3203F2B31AFCE738002CD499 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2B21AFCE738002CD499 /* AppDelegate.m */; };
 		3203F2B61AFCE738002CD499 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2B51AFCE738002CD499 /* ViewController.m */; };
 		3203F2B91AFCE738002CD499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2B71AFCE738002CD499 /* Main.storyboard */; };
-		3203F2BB1AFCE738002CD499 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2BA1AFCE738002CD499 /* Images.xcassets */; };
 		3203F2BE1AFCE738002CD499 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2BC1AFCE738002CD499 /* LaunchScreen.xib */; };
 		3203F2CA1AFCE738002CD499 /* MatchistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2C91AFCE738002CD499 /* MatchistaTests.m */; };
+		3203F2D41AFCEA38002CD499 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2D31AFCEA38002CD499 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +35,11 @@
 		3203F2B41AFCE738002CD499 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3203F2B51AFCE738002CD499 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3203F2B81AFCE738002CD499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3203F2BA1AFCE738002CD499 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3203F2BD1AFCE738002CD499 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3203F2C31AFCE738002CD499 /* MatchistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3203F2C81AFCE738002CD499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3203F2C91AFCE738002CD499 /* MatchistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchistaTests.m; sourceTree = "<group>"; };
+		3203F2D31AFCEA38002CD499 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				3203F2B41AFCE738002CD499 /* ViewController.h */,
 				3203F2B51AFCE738002CD499 /* ViewController.m */,
 				3203F2B71AFCE738002CD499 /* Main.storyboard */,
-				3203F2BA1AFCE738002CD499 /* Images.xcassets */,
+				3203F2D31AFCEA38002CD499 /* Images.xcassets */,
 				3203F2BC1AFCE738002CD499 /* LaunchScreen.xib */,
 				3203F2AD1AFCE738002CD499 /* Supporting Files */,
 			);
@@ -199,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3203F2D41AFCEA38002CD499 /* Images.xcassets in Resources */,
 				3203F2B91AFCE738002CD499 /* Main.storyboard in Resources */,
 				3203F2BE1AFCE738002CD499 /* LaunchScreen.xib in Resources */,
-				3203F2BB1AFCE738002CD499 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
