@@ -81,8 +81,6 @@
 		3203F2AC1AFCE738002CD499 /* Matchista */ = {
 			isa = PBXGroup;
 			children = (
-				3203F2B11AFCE738002CD499 /* AppDelegate.h */,
-				3203F2B21AFCE738002CD499 /* AppDelegate.m */,
 				3203F2B41AFCE738002CD499 /* ViewController.h */,
 				3203F2B51AFCE738002CD499 /* ViewController.m */,
 				3203F2B71AFCE738002CD499 /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		3203F2AD1AFCE738002CD499 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3203F2B11AFCE738002CD499 /* AppDelegate.h */,
+				3203F2B21AFCE738002CD499 /* AppDelegate.m */,
 				3203F2AE1AFCE738002CD499 /* Info.plist */,
 				3203F2AF1AFCE738002CD499 /* main.m */,
 			);
