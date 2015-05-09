@@ -15,6 +15,9 @@
 		3203F2CA1AFCE738002CD499 /* MatchistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2C91AFCE738002CD499 /* MatchistaTests.m */; };
 		3203F2D41AFCEA38002CD499 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2D31AFCEA38002CD499 /* Images.xcassets */; };
 		3203F2D71AFE6F44002CD499 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2D61AFE6F44002CD499 /* Card.m */; };
+		3203F2DB1AFE73B1002CD499 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2DA1AFE73B1002CD499 /* Deck.m */; };
+		3203F2DE1AFE78D9002CD499 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2DD1AFE78D9002CD499 /* PlayingCard.m */; };
+		3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,12 @@
 		3203F2D31AFCEA38002CD499 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3203F2D51AFE6F44002CD499 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
 		3203F2D61AFE6F44002CD499 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
+		3203F2D91AFE73B1002CD499 /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Deck.h; path = Model/Deck.h; sourceTree = "<group>"; };
+		3203F2DA1AFE73B1002CD499 /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Deck.m; path = Model/Deck.m; sourceTree = "<group>"; };
+		3203F2DC1AFE78D9002CD499 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCard.h; path = Model/PlayingCard.h; sourceTree = "<group>"; };
+		3203F2DD1AFE78D9002CD499 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
+		3203F2DF1AFE83CD002CD499 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
+		3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +137,12 @@
 			children = (
 				3203F2D51AFE6F44002CD499 /* Card.h */,
 				3203F2D61AFE6F44002CD499 /* Card.m */,
+				3203F2D91AFE73B1002CD499 /* Deck.h */,
+				3203F2DA1AFE73B1002CD499 /* Deck.m */,
+				3203F2DC1AFE78D9002CD499 /* PlayingCard.h */,
+				3203F2DD1AFE78D9002CD499 /* PlayingCard.m */,
+				3203F2DF1AFE83CD002CD499 /* PlayingCardDeck.h */,
+				3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -232,8 +247,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3203F2DE1AFE78D9002CD499 /* PlayingCard.m in Sources */,
+				3203F2DB1AFE73B1002CD499 /* Deck.m in Sources */,
 				3203F2B61AFCE738002CD499 /* ViewController.m in Sources */,
 				3203F2B31AFCE738002CD499 /* AppDelegate.m in Sources */,
+				3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */,
 				3203F2B01AFCE738002CD499 /* main.m in Sources */,
 				3203F2D71AFE6F44002CD499 /* Card.m in Sources */,
 			);
