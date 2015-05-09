@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ls-8n-SzH">
-                                <rect key="frame" x="246" y="223" width="109" height="154"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ls-8n-SzH">
+                                <rect key="frame" x="249" y="224" width="104" height="152"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="109" id="Kbr-bG-ATA"/>
                                     <constraint firstAttribute="height" constant="154" id="PVN-1X-k2M"/>
@@ -26,7 +26,7 @@
                                     <constraint firstAttribute="height" constant="154" id="sDZ-FQ-bKD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                <state key="normal" title="A♠︎" backgroundImage="frontside">
+                                <state key="normal" backgroundImage="backside">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,13 +38,25 @@
                                         <exclude reference="sDZ-FQ-bKD"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="P1p-rR-Fat"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTm-aP-gje">
+                                <rect key="frame" x="16" y="559" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="oTm-aP-gje" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0RE-jv-bq4"/>
+                            <constraint firstItem="oTm-aP-gje" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2gI-js-ovJ"/>
                             <constraint firstItem="9ls-8n-SzH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="203" id="8Bo-u0-Tl5"/>
                             <constraint firstItem="9ls-8n-SzH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="230" id="NEm-jV-cvl"/>
                             <constraint firstAttribute="centerY" secondItem="9ls-8n-SzH" secondAttribute="centerY" id="PKj-mt-UXh"/>
+                            <constraint firstItem="oTm-aP-gje" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Pwh-e5-Qwn"/>
                             <constraint firstAttribute="centerX" secondItem="9ls-8n-SzH" secondAttribute="centerX" id="Wi7-oc-xOW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ls-8n-SzH" secondAttribute="trailing" constant="229" id="XGh-Mz-5vz"/>
                             <constraint firstItem="9ls-8n-SzH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="203" id="bY4-QR-QcB"/>
@@ -52,6 +64,7 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9ls-8n-SzH" secondAttribute="bottom" constant="223" id="kP9-Oz-IhJ"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9ls-8n-SzH" secondAttribute="bottom" constant="223" id="lLu-z8-Qpf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ls-8n-SzH" secondAttribute="trailing" constant="229" id="uEa-P8-bI8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oTm-aP-gje" secondAttribute="bottom" constant="20" id="v3c-q1-e4D"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -61,17 +74,21 @@
                                 <exclude reference="bY4-QR-QcB"/>
                                 <exclude reference="jzW-k9-UpN"/>
                                 <exclude reference="uEa-P8-bI8"/>
+                                <exclude reference="Pwh-e5-Qwn"/>
                                 <exclude reference="kP9-Oz-IhJ"/>
                                 <exclude reference="lLu-z8-Qpf"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="flipsLabel" destination="oTm-aP-gje" id="gxJ-5f-gVz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
     <resources>
-        <image name="frontside" width="109" height="154"/>
+        <image name="backside" width="104" height="152"/>
     </resources>
 </document>

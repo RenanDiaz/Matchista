@@ -14,6 +14,7 @@
 		3203F2BE1AFCE738002CD499 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2BC1AFCE738002CD499 /* LaunchScreen.xib */; };
 		3203F2CA1AFCE738002CD499 /* MatchistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2C91AFCE738002CD499 /* MatchistaTests.m */; };
 		3203F2D41AFCEA38002CD499 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203F2D31AFCEA38002CD499 /* Images.xcassets */; };
+		3203F2D71AFE6F44002CD499 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2D61AFE6F44002CD499 /* Card.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3203F2C81AFCE738002CD499 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3203F2C91AFCE738002CD499 /* MatchistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchistaTests.m; sourceTree = "<group>"; };
 		3203F2D31AFCEA38002CD499 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3203F2D51AFE6F44002CD499 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = Model/Card.h; sourceTree = "<group>"; };
+		3203F2D61AFE6F44002CD499 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = Model/Card.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,7 @@
 				3203F2B41AFCE738002CD499 /* ViewController.h */,
 				3203F2B51AFCE738002CD499 /* ViewController.m */,
 				3203F2B71AFCE738002CD499 /* Main.storyboard */,
+				3203F2D81AFE6F66002CD499 /* Model */,
 				3203F2D31AFCEA38002CD499 /* Images.xcassets */,
 				3203F2BC1AFCE738002CD499 /* LaunchScreen.xib */,
 				3203F2AD1AFCE738002CD499 /* Supporting Files */,
@@ -117,6 +121,15 @@
 				3203F2C81AFCE738002CD499 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3203F2D81AFE6F66002CD499 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3203F2D51AFE6F44002CD499 /* Card.h */,
+				3203F2D61AFE6F44002CD499 /* Card.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				3203F2B61AFCE738002CD499 /* ViewController.m in Sources */,
 				3203F2B31AFCE738002CD499 /* AppDelegate.m in Sources */,
 				3203F2B01AFCE738002CD499 /* main.m in Sources */,
+				3203F2D71AFE6F44002CD499 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +430,7 @@
 				3203F2CF1AFCE738002CD499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3203F2D01AFCE738002CD499 /* Build configuration list for PBXNativeTarget "MatchistaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				3203F2D21AFCE738002CD499 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
