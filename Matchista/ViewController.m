@@ -13,14 +13,20 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) int flipCount;
-@property (nonatomic) PlayingCardDeck *deck;
+@property (nonatomic) Deck *deck;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad
+- (Deck *)deck
 {
-    self.deck = [[PlayingCardDeck alloc] init];
+    if (!_deck) _deck = [self createDeck];
+    return _deck;
+}
+
+- (Deck *)createDeck
+{
+    return [[PlayingCardDeck alloc] init];
 }
 
 - (void)setFlipCount:(int)flipCount
@@ -38,7 +44,7 @@
             [sender setTitle:@"" forState:UIControlStateNormal];    }
         else
         {
-            PlayingCard *card = (PlayingCard*)[self.deck drawRandomCard];
+            Card *card = [self.deck drawRandomCard];
             [sender setBackgroundImage:[UIImage imageNamed:@"frontside"]
                               forState:UIControlStateNormal];
             [sender setTitle:card.contents forState:UIControlStateNormal];
@@ -47,9 +53,11 @@
     }
     else
     {
-        [sender setBackgroundImage:[[UIImage alloc] init]
+        [sender setBackgroundImage:[UIImage imageNamed:@"emptycard"]
                           forState:UIControlStateNormal];
         [sender setTitle:@"⌀" forState:UIControlStateNormal];
+        sender.enabled = NO;
+        
     }
 }
 
