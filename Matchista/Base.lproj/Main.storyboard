@@ -260,12 +260,6 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zcI-se-C8D"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTm-aP-gje">
-                                <rect key="frame" x="16" y="559" width="568" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bop-hD-q2n">
                                 <rect key="frame" x="274" y="20" width="78" height="114"/>
                                 <constraints>
@@ -347,17 +341,23 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BOC-hX-jSc"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yY1-wh-NiJ">
+                                <rect key="frame" x="16" y="559" width="568" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="0.25098040699958801" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="bTW-TA-Nqv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0FZ-VM-upv"/>
-                            <constraint firstItem="oTm-aP-gje" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="0RE-jv-bq4"/>
                             <constraint firstItem="OON-1F-QEh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="1Ms-YN-HjD"/>
                             <constraint firstItem="ID6-6A-PWb" firstAttribute="top" secondItem="bop-hD-q2n" secondAttribute="bottom" constant="8" id="1RK-aM-pet"/>
-                            <constraint firstItem="oTm-aP-gje" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2gI-js-ovJ"/>
                             <constraint firstItem="ZU0-RC-M4N" firstAttribute="top" secondItem="I2c-FI-idr" secondAttribute="bottom" constant="8" id="3Yq-QV-SFp"/>
                             <constraint firstItem="C9I-gm-lms" firstAttribute="leading" secondItem="bTW-TA-Nqv" secondAttribute="trailing" constant="8" id="58k-td-cNF"/>
                             <constraint firstItem="9ls-8n-SzH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="203" id="8Bo-u0-Tl5"/>
+                            <constraint firstItem="yY1-wh-NiJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="AER-z2-mFQ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yY1-wh-NiJ" secondAttribute="bottom" constant="20" id="Cv3-hH-yNe"/>
                             <constraint firstItem="C9I-gm-lms" firstAttribute="top" secondItem="LDS-aM-SXa" secondAttribute="bottom" constant="8" id="E2a-Sf-hgG"/>
                             <constraint firstItem="ID6-6A-PWb" firstAttribute="leading" secondItem="ZU0-RC-M4N" secondAttribute="trailing" constant="8" id="HbC-fr-VA5"/>
                             <constraint firstItem="I2c-FI-idr" firstAttribute="leading" secondItem="kMx-Cb-5qP" secondAttribute="trailing" constant="8" id="M56-eY-Uxf"/>
@@ -366,12 +366,12 @@
                             <constraint firstItem="LDS-aM-SXa" firstAttribute="top" secondItem="kMx-Cb-5qP" secondAttribute="bottom" constant="8" id="Oyo-5k-8Bu"/>
                             <constraint firstAttribute="centerY" secondItem="9ls-8n-SzH" secondAttribute="centerY" id="PKj-mt-UXh"/>
                             <constraint firstItem="bop-hD-q2n" firstAttribute="leading" secondItem="I2c-FI-idr" secondAttribute="trailing" constant="8" id="Pag-la-4Rx"/>
-                            <constraint firstItem="oTm-aP-gje" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Pwh-e5-Qwn"/>
                             <constraint firstItem="kMx-Cb-5qP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Q6q-sF-k7W"/>
                             <constraint firstItem="OON-1F-QEh" firstAttribute="top" secondItem="9ls-8n-SzH" secondAttribute="bottom" constant="8" id="V8T-GT-Gy0"/>
                             <constraint firstAttribute="centerX" secondItem="9ls-8n-SzH" secondAttribute="centerX" id="Wi7-oc-xOW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ls-8n-SzH" secondAttribute="trailing" constant="229" id="XGh-Mz-5vz"/>
                             <constraint firstItem="ZU0-RC-M4N" firstAttribute="leading" secondItem="LDS-aM-SXa" secondAttribute="trailing" constant="8" id="Ytv-rd-A2u"/>
+                            <constraint firstItem="yY1-wh-NiJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Z3Q-v3-265"/>
                             <constraint firstItem="kMx-Cb-5qP" firstAttribute="leading" secondItem="9ls-8n-SzH" secondAttribute="trailing" constant="8" id="asG-xU-TCB"/>
                             <constraint firstItem="9ls-8n-SzH" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="203" id="bY4-QR-QcB"/>
                             <constraint firstItem="bTW-TA-Nqv" firstAttribute="top" secondItem="OON-1F-QEh" secondAttribute="bottom" constant="8" id="emy-i7-x3S"/>
@@ -383,10 +383,11 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9ls-8n-SzH" secondAttribute="bottom" constant="223" id="lLu-z8-Qpf"/>
                             <constraint firstItem="bop-hD-q2n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lbi-vH-pi9"/>
                             <constraint firstItem="Eji-o3-TP0" firstAttribute="leading" secondItem="Ohd-tn-d14" secondAttribute="trailing" constant="8" id="lmf-Ia-Lj3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="yY1-wh-NiJ" secondAttribute="bottom" constant="20" id="lv7-gz-6HY"/>
                             <constraint firstItem="Ohd-tn-d14" firstAttribute="leading" secondItem="C9I-gm-lms" secondAttribute="trailing" constant="8" id="oXs-dg-geL"/>
+                            <constraint firstItem="yY1-wh-NiJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="pT8-x3-Eli"/>
                             <constraint firstItem="Ohd-tn-d14" firstAttribute="top" secondItem="ZU0-RC-M4N" secondAttribute="bottom" constant="8" id="pXH-A2-OyF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9ls-8n-SzH" secondAttribute="trailing" constant="229" id="uEa-P8-bI8"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oTm-aP-gje" secondAttribute="bottom" constant="20" id="v3c-q1-e4D"/>
                             <constraint firstItem="LDS-aM-SXa" firstAttribute="leading" secondItem="OON-1F-QEh" secondAttribute="trailing" constant="8" id="zMy-tD-na7"/>
                         </constraints>
                         <variation key="default">
@@ -399,14 +400,27 @@
                                 <exclude reference="bY4-QR-QcB"/>
                                 <exclude reference="jzW-k9-UpN"/>
                                 <exclude reference="uEa-P8-bI8"/>
-                                <exclude reference="Pwh-e5-Qwn"/>
+                                <exclude reference="Z3Q-v3-265"/>
                                 <exclude reference="kP9-Oz-IhJ"/>
                                 <exclude reference="lLu-z8-Qpf"/>
+                                <exclude reference="lv7-gz-6HY"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="flipsLabel" destination="oTm-aP-gje" id="gxJ-5f-gVz"/>
+                        <outlet property="scoreLabel" destination="yY1-wh-NiJ" id="oqT-0d-t6Z"/>
+                        <outletCollection property="cardButtons" destination="bop-hD-q2n" id="e4O-Ye-wcs"/>
+                        <outletCollection property="cardButtons" destination="9ls-8n-SzH" id="bZN-cP-dBf"/>
+                        <outletCollection property="cardButtons" destination="kMx-Cb-5qP" id="WPO-Rd-g16"/>
+                        <outletCollection property="cardButtons" destination="I2c-FI-idr" id="ihG-rB-fgz"/>
+                        <outletCollection property="cardButtons" destination="OON-1F-QEh" id="VN2-md-pRI"/>
+                        <outletCollection property="cardButtons" destination="LDS-aM-SXa" id="fCd-H0-PfR"/>
+                        <outletCollection property="cardButtons" destination="ZU0-RC-M4N" id="wR1-jJ-QHd"/>
+                        <outletCollection property="cardButtons" destination="ID6-6A-PWb" id="gsj-K6-Rnv"/>
+                        <outletCollection property="cardButtons" destination="bTW-TA-Nqv" id="aue-yI-onL"/>
+                        <outletCollection property="cardButtons" destination="C9I-gm-lms" id="y3v-X8-CSD"/>
+                        <outletCollection property="cardButtons" destination="Ohd-tn-d14" id="kJU-aW-nlf"/>
+                        <outletCollection property="cardButtons" destination="Eji-o3-TP0" id="mHN-aE-UIs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
