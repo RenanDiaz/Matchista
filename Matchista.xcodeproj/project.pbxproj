@@ -18,6 +18,7 @@
 		3203F2DB1AFE73B1002CD499 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2DA1AFE73B1002CD499 /* Deck.m */; };
 		3203F2DE1AFE78D9002CD499 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2DD1AFE78D9002CD499 /* PlayingCard.m */; };
 		3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */; };
+		3203F2E41AFFB2C1002CD499 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2E31AFFB2C1002CD499 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		3203F2DD1AFE78D9002CD499 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCard.m; path = Model/PlayingCard.m; sourceTree = "<group>"; };
 		3203F2DF1AFE83CD002CD499 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayingCardDeck.h; path = Model/PlayingCardDeck.h; sourceTree = "<group>"; };
 		3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayingCardDeck.m; path = Model/PlayingCardDeck.m; sourceTree = "<group>"; };
+		3203F2E21AFFB2C1002CD499 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
+		3203F2E31AFFB2C1002CD499 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +138,8 @@
 		3203F2D81AFE6F66002CD499 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3203F2E21AFFB2C1002CD499 /* CardMatchingGame.h */,
+				3203F2E31AFFB2C1002CD499 /* CardMatchingGame.m */,
 				3203F2D51AFE6F44002CD499 /* Card.h */,
 				3203F2D61AFE6F44002CD499 /* Card.m */,
 				3203F2D91AFE73B1002CD499 /* Deck.h */,
@@ -251,6 +256,7 @@
 				3203F2DB1AFE73B1002CD499 /* Deck.m in Sources */,
 				3203F2B61AFCE738002CD499 /* ViewController.m in Sources */,
 				3203F2B31AFCE738002CD499 /* AppDelegate.m in Sources */,
+				3203F2E41AFFB2C1002CD499 /* CardMatchingGame.m in Sources */,
 				3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */,
 				3203F2B01AFCE738002CD499 /* main.m in Sources */,
 				3203F2D71AFE6F44002CD499 /* Card.m in Sources */,
