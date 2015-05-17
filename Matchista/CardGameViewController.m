@@ -6,17 +6,16 @@
 //  Copyright (c) 2015 Renán Díaz Reyes. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "PlayingCardDeck.h"
+#import "CardGameViewController.h"
 #import "CardMatchingGame.h"
 
-@interface ViewController ()
+@interface CardGameViewController ()
 @property (strong, nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @end
 
-@implementation ViewController
+@implementation CardGameViewController
 
 - (CardMatchingGame *)game
 {
@@ -27,7 +26,7 @@
 
 - (Deck *)createDeck
 {
-    return [[PlayingCardDeck alloc] init];
+    return nil;
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender
