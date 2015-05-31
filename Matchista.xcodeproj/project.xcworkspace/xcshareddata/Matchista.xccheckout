@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>C2C319C5-5197-4E02-BAED-798A5438D5ED</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>Matchista</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>72456315BBE71A97E564A19873F2EC656866F2BD</key>
 		<string>https://github.com/RenanDiaz/Matchista.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Matchista.xcodeproj/project.xcworkspace</string>
+	<string>Matchista.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>72456315BBE71A97E564A19873F2EC656866F2BD</key>

@@ -43,7 +43,7 @@
         Card *card = [self.game cardAtIndex:cardButtonIndex];
         [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
         if ([[self titleForCard:card] containsString:@"♥︎"] || [[self titleForCard:card] containsString:@"♦︎"]) {
-            [cardButton setTitleColor:[UIColor colorWithRed:255/255.0 green:0/255.0 blue:0/255.0 alpha:1.0] forState:UIControlStateNormal];
+            [cardButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         }
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
