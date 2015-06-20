@@ -45,6 +45,10 @@
         if ([[self titleForCard:card] containsString:@"♥︎"] || [[self titleForCard:card] containsString:@"♦︎"]) {
             [cardButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
         }
+        else
+        {
+            [cardButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        }
         [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
         cardButton.enabled = !card.isMatched;
         self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", (long)self.game.score];
@@ -59,6 +63,12 @@
 - (UIImage *)backgroundImageForCard:(Card *)card
 {
     return [UIImage imageNamed:card.isChosen ? @"frontside" : @"backside"];
+}
+
+- (IBAction)newGame
+{
+    self.game = nil;
+    [self updateUI];
 }
 
 @end

@@ -20,6 +20,9 @@
 		3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */; };
 		3203F2E41AFFB2C1002CD499 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F2E31AFFB2C1002CD499 /* CardMatchingGame.m */; };
 		3203F3191B08D3F5002CD499 /* PlayingCardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3203F3181B08D3F5002CD499 /* PlayingCardGameViewController.m */; };
+		3204A9431B257B47003D968C /* UnoCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204A9421B257B47003D968C /* UnoCard.m */; };
+		3204A9461B257B61003D968C /* UnoCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204A9451B257B61003D968C /* UnoCardDeck.m */; };
+		3204A9491B2582FD003D968C /* UnoGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3204A9481B2582FD003D968C /* UnoGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,12 @@
 		3203F2E31AFFB2C1002CD499 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
 		3203F3171B08D3F5002CD499 /* PlayingCardGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardGameViewController.h; sourceTree = "<group>"; };
 		3203F3181B08D3F5002CD499 /* PlayingCardGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardGameViewController.m; sourceTree = "<group>"; };
+		3204A9411B257B47003D968C /* UnoCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnoCard.h; path = Model/UnoCard.h; sourceTree = "<group>"; };
+		3204A9421B257B47003D968C /* UnoCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnoCard.m; path = Model/UnoCard.m; sourceTree = "<group>"; };
+		3204A9441B257B61003D968C /* UnoCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnoCardDeck.h; path = Model/UnoCardDeck.h; sourceTree = "<group>"; };
+		3204A9451B257B61003D968C /* UnoCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnoCardDeck.m; path = Model/UnoCardDeck.m; sourceTree = "<group>"; };
+		3204A9471B2582FD003D968C /* UnoGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnoGame.h; path = Model/UnoGame.h; sourceTree = "<group>"; };
+		3204A9481B2582FD003D968C /* UnoGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnoGame.m; path = Model/UnoGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +162,12 @@
 				3203F2DD1AFE78D9002CD499 /* PlayingCard.m */,
 				3203F2DF1AFE83CD002CD499 /* PlayingCardDeck.h */,
 				3203F2E01AFE83CD002CD499 /* PlayingCardDeck.m */,
+				3204A9411B257B47003D968C /* UnoCard.h */,
+				3204A9421B257B47003D968C /* UnoCard.m */,
+				3204A9441B257B61003D968C /* UnoCardDeck.h */,
+				3204A9451B257B61003D968C /* UnoCardDeck.m */,
+				3204A9471B2582FD003D968C /* UnoGame.h */,
+				3204A9481B2582FD003D968C /* UnoGame.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -261,10 +276,13 @@
 				3203F2DB1AFE73B1002CD499 /* Deck.m in Sources */,
 				3203F2B61AFCE738002CD499 /* CardGameViewController.m in Sources */,
 				3203F2B31AFCE738002CD499 /* AppDelegate.m in Sources */,
+				3204A9491B2582FD003D968C /* UnoGame.m in Sources */,
+				3204A9461B257B61003D968C /* UnoCardDeck.m in Sources */,
 				3203F2E41AFFB2C1002CD499 /* CardMatchingGame.m in Sources */,
 				3203F2E11AFE83CD002CD499 /* PlayingCardDeck.m in Sources */,
 				3203F2B01AFCE738002CD499 /* main.m in Sources */,
 				3203F2D71AFE6F44002CD499 /* Card.m in Sources */,
+				3204A9431B257B47003D968C /* UnoCard.m in Sources */,
 				3203F3191B08D3F5002CD499 /* PlayingCardGameViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +412,7 @@
 				INFOPLIST_FILE = Matchista/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -404,6 +423,7 @@
 				INFOPLIST_FILE = Matchista/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
